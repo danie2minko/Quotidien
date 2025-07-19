@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "727246633037",
+    "project_id": "quotidien-c04f5",
+    "storage_bucket": "quotidien-c04f5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727246633037:android:8de6dc2de8119887c5c404",
+        "android_client_info": {
+          "package_name": "com.example.quotidien"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4KezCwyZMbCkvKyTeD4fL_g1n0uImDhY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
