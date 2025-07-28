@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   Future<void> _navigateAfterDelay() async {
     await Future.delayed(Duration(seconds: 3));
-    Navigator.of(context).pushReplacementNamed('/welcome');
+    Navigator.of(context).pushReplacementNamed('/homepage');
   }
 
   @override

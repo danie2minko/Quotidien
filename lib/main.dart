@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:quotidien/pages/add_task.dart';
+import 'package:quotidien/pages/history.dart';
+import 'package:quotidien/pages/home_page.dart';
 import 'package:quotidien/pages/sign_in.dart';
 import 'package:quotidien/pages/sign_up.dart';
 import 'package:quotidien/pages/splash_screen.dart';
@@ -7,10 +10,12 @@ import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
 void main() async{
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
 );
+  runApp(const MyApp());
+  
 }
 
 class MyApp extends StatelessWidget {
@@ -25,7 +30,10 @@ class MyApp extends StatelessWidget {
       routes: {
         '/welcome':(context) => const Welcome(),
         '/signin':(context)=> const SignIn(),
-        '/signup': (context)=> const SignUp()
+        '/signup': (context)=> const SignUp(),
+        '/homepage':(context)=> const HomePage(),
+        '/history':(context)=> const History(),
+        '/addtask':(context)=> const AddTask(),
       },
     );
   }
